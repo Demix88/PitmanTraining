@@ -14,35 +14,34 @@ namespace PitmanTraining
             Console.WriteLine("Pitman Training. \nStudent Daily Report");
             
             Console.WriteLine("What course are you in?");
-            string yourCourse = ("Web Developer");
+            string yourCourse = Console.ReadLine();
             Console.WriteLine(yourCourse);
 
 
             Console.WriteLine("What page number");
-
-
-            int pageNum = 4;
-            Console.WriteLine("I am on  a page  : "+pageNum+" .");
+            string pageNum = Console.ReadLine();
+            Console.WriteLine("I am on  a page  : "+Convert.ToInt32(pageNum)+" .");
             
             Console.WriteLine("Do you need help with anything? Please answer with \"true\" or \"false\" .");
+            Console.ReadLine();
+            bool needHelp = true;
             
-            bool needHelp = false;
             string helpStatus = Convert.ToString(needHelp);
             Console.WriteLine(helpStatus+" .");
             
 
 
             Console.WriteLine("Were there any positive experiences you'd like to share? Please provide specifics.");
-            string posExp = ("\nI really enjoyed SQL Course. I liked creating queries and creating tables with specific information.\n ");
+            string posExp = Console.ReadLine(); 
             Console.WriteLine(posExp);
 
             Console.WriteLine("Is there any other feedback you’d like to provide?  Please be specific.");
-            string othFeedback=("\nI'm not happy that some of the course materials are not up to date.\n for example using visual studio 2019 instead of Visual Studio 2022. I think people in IT should work with latest technology!");
+            string othFeedback= Console.ReadLine();
             Console.WriteLine(othFeedback);
 
 
             Console.WriteLine("How many hours did you study today?");
-            string qtyHours = "2";
+            string qtyHours = Console.ReadLine();
             int qHours = Convert.ToInt32(qtyHours);
             Console.WriteLine("I studied for: \n" + qHours + " hours.");
             
